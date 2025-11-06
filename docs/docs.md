@@ -14,7 +14,7 @@ This is an analytics-first SQL repository that assumes a SQL Server-based data w
 - gold.dim_products (example columns):
   - product_key, product_name, category, subcategory, cost, other attributes
 
-Note: for more informations about columns refer to the [Data Catlog]()
+Note: for more informations about columns refer to the [Data Catlog](https://github.com/RayenHasni/sql-data-analytics-project/blob/main/docs/Data%20Catalog)
 
 ### Script themes & patterns
 
