@@ -4,7 +4,7 @@ A comprehensive collection of T-SQL scripts for exploring, analyzing, segmenting
 
 This repository is a toolkit for data analysts and BI professionals to quickly run exploratory queries, build KPI reports, and demonstrate end-to-end analytical thinking. It is also structured to showcase practical skills for job-seeking data analysts: data modelling, analytical SQL, window functions, aggregation patterns, and reporting via views.
 
-## What this project contains
+## 🗺️ Project Roadmap
 
 - datasets/ — sample CSVs used to seed or inspect local data (medallion layers represented as bronze/silver/gold CSVs).
 - scripts/ — T-SQL scripts grouped by analytical purpose. Key scripts:
@@ -21,6 +21,8 @@ This repository is a toolkit for data analysts and BI professionals to quickly r
   - `11_part_to_whole_analysis.sql` — part-to-whole (percentage of total)
   - `12_report_customers.sql` — view: `gold.report_customers` (customer-level KPIs)
   - `13_report_products.sql` — view: `gold.report_products` (product-level KPIs)
+
+![Project Roadmap](https://github.com/RayenHasni/sql-data-warehouse-project/blob/main/docs/Data%20Architecture.png)
 
 ## Project purpose
 
@@ -44,6 +46,10 @@ This project expects a medallion-style warehouse (bronze -> silver -> gold). The
   - Ad-hoc query results returned by the `scripts/*.sql` queries
   - Views created by scripts: `gold.report_customers`, `gold.report_products`
   - A set of example CSVs and a backup file for local experimentation in `datasets/`
+
+ ## 🛡️ License
+
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
 
 Success criteria
 - Queries run on SQL Server (T-SQL) without syntax errors
