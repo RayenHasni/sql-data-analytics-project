@@ -22,7 +22,7 @@ This repository is a toolkit for data analysts and BI professionals to quickly r
   - `12_report_customers.sql` — view: `gold.report_customers` (customer-level KPIs)
   - `13_report_products.sql` — view: `gold.report_products` (product-level KPIs)
 
-![Project Roadmap](https://github.com/RayenHasni/sql-data-warehouse-project/blob/main/docs/Data%20Architecture.png)
+![Project Roadmap](https://github.com/RayenHasni/sql-data-analytics-project/blob/main/docs/Project%20Roadmap.png)
 
 ## 🎯 Project purpose
 
@@ -39,13 +39,12 @@ This project expects a medallion-style warehouse (bronze -> silver -> gold). The
 - `gold.dim_products` — dimension table for products
 - `gold.fact_sales` — fact table with transactional sales
 
-## 📥 Inputs / Outputs (contract)
+## 📥 Inputs / Outputs
 
 - Inputs: materialized gold tables (at minimum `gold.fact_sales`, `gold.dim_customers`, `gold.dim_products`) with typical columns (order_date, sales_amount, quantity, product_key, customer_key, product attributes, customer attributes).
 - Outputs:
   - Ad-hoc query results returned by the `scripts/*.sql` queries
   - Views created by scripts: `gold.report_customers`, `gold.report_products`
-  - A set of example CSVs and a backup file for local experimentation in `datasets/`
 
  ## 🛡️ License
 
