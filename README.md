@@ -39,17 +39,18 @@ This project expects a medallion-style warehouse (bronze -> silver -> gold). The
 - `gold.dim_products` — dimension table for products
 - `gold.fact_sales` — fact table with transactional sales
 
+Note: a SQL data warehouse is built in another repo [repo link] (https://github.com/RayenHasni/sql-data-warehouse-project) — this repository focuses on analytics and reporting using that gold layer.
+
 ## 📥 Inputs / Outputs
 
 - Inputs: materialized gold tables (at minimum `gold.fact_sales`, `gold.dim_customers`, `gold.dim_products`) with typical columns (order_date, sales_amount, quantity, product_key, customer_key, product attributes, customer attributes).
 - Outputs:
   - Ad-hoc query results returned by the `scripts/*.sql` queries
   - Views created by scripts: `gold.report_customers`, `gold.report_products`
+- Success criteria:
+- Queries run on SQL Server (T-SQL) without syntax errors
+- Views return expected aggregated KPIs and columns documented in the scripts
 
  ## 🛡️ License
 
 This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
-
-Success criteria
-- Queries run on SQL Server (T-SQL) without syntax errors
-- Views return expected aggregated KPIs and columns documented in the scripts
