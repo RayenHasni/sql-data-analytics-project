@@ -1,10 +1,11 @@
+## Project Documentation
 This document expands on the README with technical details useful for interviews and hand-offs.
 
 ### Project overview
 
 This is an analytics-first SQL repository that assumes a SQL Server-based data warehouse following a medallion pattern (bronze → silver → gold). The repository focuses on queries and reporting logic executed against the gold layer.
 
-### Core tables / expected schema (summary)
+### Core tables / expected schema
 
 - gold.fact_sales (example columns):
   - order_number, order_date, product_key, customer_key, sales_amount, price, quantity
@@ -13,7 +14,7 @@ This is an analytics-first SQL repository that assumes a SQL Server-based data w
 - gold.dim_products (example columns):
   - product_key, product_name, category, subcategory, cost, other attributes
 
-Note: column names are referenced in scripts; if your gold schema uses different names adapt the scripts or add a mapping layer.
+Note: for more informations about columns refer to the [Data Catlog]()
 
 ### Script themes & patterns
 
