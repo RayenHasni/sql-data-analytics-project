@@ -1,7 +1,7 @@
 ## Project Documentation
+---
+### Overview
 This document expands on the README with technical details useful for interviews and hand-offs.
-
-### Project overview
 
 This is an analytics-first SQL repository that assumes a SQL Server-based data warehouse following a medallion pattern (bronze → silver → gold). The repository focuses on queries and reporting logic executed against the gold layer.
 
