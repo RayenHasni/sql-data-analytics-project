@@ -24,7 +24,7 @@ This repository is a toolkit for data analysts and BI professionals to quickly r
 
 ![Project Roadmap](https://github.com/RayenHasni/sql-data-warehouse-project/blob/main/docs/Data%20Architecture.png)
 
-## Project purpose
+## 🎯 Project purpose
 
 This repo demonstrates how to take cleaned and integrated data (gold layer) and:
 - Explore and validate the data model and temporal coverage
@@ -32,14 +32,14 @@ This repo demonstrates how to take cleaned and integrated data (gold layer) and:
 - Segment customers and products for targeted analysis
 - Produce reusable reporting artifacts (views) that feed dashboards or stakeholders
 
-## Architecture & data flow
+## 🏗️ Architecture & data flow
 
 This project expects a medallion-style warehouse (bronze -> silver -> gold). The scripts operate primarily on the gold layer tables:
 - `gold.dim_customers` — dimension table for customers
 - `gold.dim_products` — dimension table for products
 - `gold.fact_sales` — fact table with transactional sales
 
-## Inputs / Outputs (contract)
+## 📥 Inputs / Outputs (contract)
 
 - Inputs: materialized gold tables (at minimum `gold.fact_sales`, `gold.dim_customers`, `gold.dim_products`) with typical columns (order_date, sales_amount, quantity, product_key, customer_key, product attributes, customer attributes).
 - Outputs:
