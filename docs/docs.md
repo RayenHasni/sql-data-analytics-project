@@ -6,6 +6,7 @@ This document expands on the README with technical details useful for interviews
 
 This is an analytics-first SQL repository that assumes a SQL Server-based data warehouse following a medallion pattern (bronze → silver → gold). The repository focuses on queries and reporting logic executed against the gold layer.
 
+---
 ### Core tables / expected schema
 
 - gold.fact_sales (example columns):
@@ -17,6 +18,7 @@ This is an analytics-first SQL repository that assumes a SQL Server-based data w
 
 Note: for more informations about columns refer to the [Data Catlog](https://github.com/RayenHasni/sql-data-analytics-project/blob/main/docs/Data%20Catalog)
 
+---
 ### Script themes & patterns
 
 - Exploration: `01_database_exploration.sql`, `02_dimensions_exploration.sql`, `03_date_range_exploration.sql` — quick checks to understand data quality and scope.
@@ -25,6 +27,7 @@ Note: for more informations about columns refer to the [Data Catlog](https://git
 - Time analysis: `07_change_over_time_analysis.sql`, `08_cumulative_analysis.sql`, `09_performance_analysis.sql` — time bucketing, running totals, YoY with `LAG()` and windowed averages.
 - Reporting: `12_report_customers.sql`, `13_report_products.sql` — views intended to be consumed by dashboards.
 
+---
 ### KPI definitions (as used in views)
 
 - Total Sales: SUM(sales_amount)
@@ -33,6 +36,7 @@ Note: for more informations about columns refer to the [Data Catlog](https://git
 - Recency (customer): months since last order
 - Lifespan: months between first and last order
 
+---
 ### Common SQL techniques showcased
 
 - Defensive aggregation (NULLIF / CASE to avoid divide-by-zero)
