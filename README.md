@@ -2,6 +2,7 @@
 A comprehensive collection of T-SQL scripts for exploring, analyzing, segmenting and reporting on sales data stored in a SQL Server data warehouse.
 
 This repository is a toolkit for data analysts and BI professionals to quickly run exploratory queries, build KPI reports, and demonstrate end-to-end analytical thinking. It is also structured to showcase practical skills including `data modelling`, `analytical SQL`, `window functions`, `aggregation patterns` and `reporting via views`.
+
 ---
 ## 🗺️ Project Roadmap
 
@@ -39,6 +40,7 @@ This project expects a medallion-style warehouse (bronze -> silver -> gold). The
 - `gold.fact_sales` — fact table with transactional sales
 
 Note: a SQL data warehouse is built in another repo [Link](https://github.com/RayenHasni/sql-data-warehouse-project) — this repository focuses on analytics and reporting using that gold layer.
+
 ---
 ## 📥 Inputs / Outputs
 
