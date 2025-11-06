@@ -39,7 +39,7 @@ This project expects a medallion-style warehouse (bronze -> silver -> gold). The
 - `gold.dim_products` — dimension table for products
 - `gold.fact_sales` — fact table with transactional sales
 
-Note: a SQL data warehouse is built in another repo [repo link](https://github.com/RayenHasni/sql-data-warehouse-project) — this repository focuses on analytics and reporting using that gold layer.
+Note: a SQL data warehouse is built in another repo [Link](https://github.com/RayenHasni/sql-data-warehouse-project) — this repository focuses on analytics and reporting using that gold layer.
 
 ## 📥 Inputs / Outputs
 
