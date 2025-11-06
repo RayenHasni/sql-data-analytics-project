@@ -1,11 +1,11 @@
 ## SQL Data Analytics Project
-
+---
 A comprehensive collection of T-SQL scripts for exploring, analyzing, segmenting and reporting on sales data stored in a SQL Server data warehouse.
 
 This repository is a toolkit for data analysts and BI professionals to quickly run exploratory queries, build KPI reports, and demonstrate end-to-end analytical thinking. It is also structured to showcase practical skills including `data modelling`, `analytical SQL`, `window functions`, `aggregation patterns` and `reporting via views`.
 
 ## 🗺️ Project Roadmap
-
+---
 - datasets/ — sample CSVs used to seed or inspect local data (medallion layers represented as bronze/silver/gold CSVs).
 - scripts/ — T-SQL scripts grouped by analytical purpose. Key scripts:
   - `01_database_exploration.sql` — inspect tables / schema
@@ -25,7 +25,7 @@ This repository is a toolkit for data analysts and BI professionals to quickly r
 ![Project Roadmap](https://github.com/RayenHasni/sql-data-analytics-project/blob/main/docs/Project%20Roadmap.png)
 
 ## 🎯 Project purpose
-
+---
 This repo demonstrates how to take cleaned and integrated data (gold layer) and:
 - Explore and validate the data model and temporal coverage
 - Build aggregate metrics and KPIs (sales, quantity, AOV, recency, lifespan)
@@ -33,7 +33,7 @@ This repo demonstrates how to take cleaned and integrated data (gold layer) and:
 - Produce reusable reporting artifacts (views) that feed dashboards or stakeholders
 
 ## 🏗️ Architecture & data flow
-
+---
 This project expects a medallion-style warehouse (bronze -> silver -> gold). The scripts operate primarily on the gold layer tables:
 - `gold.dim_customers` — dimension table for customers
 - `gold.dim_products` — dimension table for products
@@ -42,7 +42,7 @@ This project expects a medallion-style warehouse (bronze -> silver -> gold). The
 Note: a SQL data warehouse is built in another repo [Link](https://github.com/RayenHasni/sql-data-warehouse-project) — this repository focuses on analytics and reporting using that gold layer.
 
 ## 📥 Inputs / Outputs
-
+---
 - Inputs: materialized gold tables (at minimum `gold.fact_sales`, `gold.dim_customers`, `gold.dim_products`) with typical columns (order_date, sales_amount, quantity, product_key, customer_key, product attributes, customer attributes).
 - Outputs:
   - Ad-hoc query results returned by the `scripts/*.sql` queries
@@ -52,5 +52,5 @@ Note: a SQL data warehouse is built in another repo [Link](https://github.com/Ra
 - Views return expected aggregated KPIs and columns documented in the scripts
 
  ## 🛡️ License
-
+---
 This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
